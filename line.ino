@@ -32,7 +32,7 @@ analogWrite(rmotorf,255);
 analogWrite(lmotorb,0);
 analogWrite(rmotorb,0);
 }
-else if(((l1sensor==HIGH)||(l2sensor==HIGH))&& ((r1sensor==LOW)||(r2sensor==LOW)))
+else if(((l1sensor==LOW)||(l2sensor==LOW))&&((r1sensor==HIGH)||(r2sensor==HIGH)))
 {
 // turn right
 analogWrite(lmotorf,255);
@@ -40,7 +40,7 @@ analogWrite(rmotorf,0);
 analogWrite(lmotorb,0);
 analogWrite(rmotorb,255);
 }
-else if(((l1sensor==LOW)||(l2sensor==LOW))&&((r1sensor==HIGH)||(r2sensor==HIGH)))
+else if(((l1sensor==HIGH)||(l2sensor==HIGH))&& ((r1sensor==LOW)||(r2sensor==LOW)))
 {
 // turn left
 analogWrite(lmotorf,0);
