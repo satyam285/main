@@ -23,6 +23,8 @@ int l1sensor=digitalRead(13);
 int l2sensor=digitalRead(7);
 int r1sensor=digitalRead(10);
 int r2sensor=digitalRead(8);
+int r1sensor=22;
+int r2sensor=12;
 
 if((l1sensor==HIGH)&&(r1sensor==HIGH)&&(l2sensor==HIGH)&&(r2sensor==HIGH))
 {
